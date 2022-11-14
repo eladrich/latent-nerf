@@ -12,10 +12,50 @@ Our three text-guided models: a purely text-guided Latent-NeRF, Latent-NeRF with
 </p>
 
 ## Description
-Official Implementation for "Latent-NeRF for Shape-Guided Generation of 3D Shapes and Textures"
+Official Implementation for "Latent-NeRF for Shape-Guided Generation of 3D Shapes and Textures".
+
+### Latent-Paint
+
+In the `Latent-Paint` application, a texture is generated for an explicit mesh directly on its texture map using stable-diffusion as a prior.
+
+
+<img src="docs/car.gif" width="800px"/>
+
+<img src="docs/fish.gif" width="800px"/>
+
+Below we can see the progress of the generation process over the optimization process
+
+<img src="docs/fish_with_texture.gif" width="800px"/>
+
+### Sketch-Guided Latent-NeRF
+
+Here we use a simple coarse geometry which we call a `SketchShape` to guide the generation process. 
+
+A `SketchShape` presents a soft constraint which guides the occupancy of a learned NeRF model but isn't constrained to its exact geometry.
+
+<img src="docs/sketch_teddy.gif" width="800px"/>
+
+
+### Unconstrained Latent-NeRF
+
+Here we apply a text-to-3D without any shape constraint  similarly to dreamfusion and stable-dreamfusion. 
+
+We directly train the NeRF in latent space, so no encoding into the latent space is required during training.
+
+
+<img src="docs/latent_nerf_compressed.gif" width="800px"/>
+
+
+<img src="docs/castle.gif" width="200px"/>
+<img src="docs/palmtree.gif" width="200px"/>
+<img src="docs/fruits.gif" width="200px"/>
+<img src="docs/pancake.gif" width="200px"/>
 
 Code coming soon!
 
 ## Recent Updates
 `14.11.2022` - Created initial repo
 
+
+## Acknowledgments
+The Latent-NeRF code is heavily based on the [stable-dreamfusion](https://github.com/ashawkey/stable-dreamfusion) project
