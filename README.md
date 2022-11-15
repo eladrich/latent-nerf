@@ -8,7 +8,7 @@ We also show that latent score distillation can be successfully applied directly
 ## Description
 Official Implementation for "Latent-NeRF for Shape-Guided Generation of 3D Shapes and Textures".
 
-> TL;DR - We present three text-guided models: a purely text-guided Latent-NeRF, Latent-NeRF with Sketch-Shape guidance for more exact control over the generated shape, and Latent-Paint for texture generation for explicit shapes.
+> TL;DR - We explore different ways of introducing shape-guidance for Text-to-3D and present three models: a purely text-guided Latent-NeRF, Latent-NeRF with soft shape guidance for more exact control over the generated shape, and Latent-Paint for texture generation for explicit shapes.
 
 
 ### Latent-Paint
@@ -50,11 +50,20 @@ We directly train the NeRF in latent space, so no encoding into the latent space
   <img src="docs/pancake.gif" width="200px"/>
 </p>
 
-Code is getting finalized and coming very soon!
+#### Textual Inversion
+
+As our Latent-NeRF is supervised by Stable-Diffusion, we can also use `Textual Inversion` tokens as part of the input text prompt. This allows conditioning the object generation on specific objects and styles, defined only by input images.
+
+<img src="docs/textual_inversion.gif" width="800px"/>
+
+
 
 ## Recent Updates
 `14.11.2022` - Created initial repo
 
+## Getting Started
+
+Code is getting finalized and coming very soon!
 
 ## Acknowledgments
 The Latent-NeRF code is heavily based on the [stable-dreamfusion](https://github.com/ashawkey/stable-dreamfusion) project
