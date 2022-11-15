@@ -5,19 +5,17 @@
 Analyzing our Latent-NeRF, we show that while Text-to-3D models can generate impressive results, they are inherently unconstrained and may lack the ability to guide or enforce a specific 3D structure. To assist and direct the 3D generation, we propose to guide our Latent-NeRF using a Sketch-Shape: an abstract geometry that defines the coarse structure of the desired object. Then, we present means to integrate such a constraint directly into a Latent-NeRF. This unique combination of text and shape guidance allows for increased control over the generation process.
 We also show that latent score distillation can be successfully applied directly on 3D meshes. This allows for generating high-quality textures on a given geometry. Our experiments validate the power of our different forms of guidance and the efficiency of using latent rendering.
 
-<p align="center">
-<img src="docs/teaser.png" width="800px"/>
-<br>
-Our three text-guided models: a purely text-guided Latent-NeRF, Latent-NeRF with Sketch-Shape guidance for more exact control over the generated shape, and Latent-Paint for texture generation for explicit shapes. The top row represents the models' inputs.
-</p>
-
 ## Description
 Official Implementation for "Latent-NeRF for Shape-Guided Generation of 3D Shapes and Textures".
+
+> TL;DR - We present three text-guided models: a purely text-guided Latent-NeRF, Latent-NeRF with Sketch-Shape guidance for more exact control over the generated shape, and Latent-Paint for texture generation for explicit shapes.
+
 
 ### Latent-Paint
 
 In the `Latent-Paint` application, a texture is generated for an explicit mesh directly on its texture map using stable-diffusion as a prior.
 
+Here the geometry is used as a hard constraint where the generation process is tied to the given mesh and its parameterization.
 
 <img src="docs/car.gif" width="800px"/>
 
@@ -38,20 +36,21 @@ A `SketchShape` presents a soft constraint which guides the occupancy of a learn
 
 ### Unconstrained Latent-NeRF
 
-Here we apply a text-to-3D without any shape constraint  similarly to dreamfusion and stable-dreamfusion. 
+Here we apply a text-to-3D without any shape constraint similarly to dreamfusion and stable-dreamfusion. 
 
 We directly train the NeRF in latent space, so no encoding into the latent space is required during training.
 
 
 <img src="docs/latent_nerf_compressed.gif" width="800px"/>
 
+<p align="left">
+  <img src="docs/castle.gif" width="200px"/>
+  <img src="docs/palmtree.gif" width="200px"/>
+  <img src="docs/fruits.gif" width="200px"/>
+  <img src="docs/pancake.gif" width="200px"/>
+</p>
 
-<img src="docs/castle.gif" width="200px"/>
-<img src="docs/palmtree.gif" width="200px"/>
-<img src="docs/fruits.gif" width="200px"/>
-<img src="docs/pancake.gif" width="200px"/>
-
-Code coming soon!
+Code is getting finalized and coming very soon!
 
 ## Recent Updates
 `14.11.2022` - Created initial repo
