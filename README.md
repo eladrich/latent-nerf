@@ -33,6 +33,12 @@ A `SketchShape` presents a soft constraint which guides the occupancy of a learn
 
 <img src="docs/sketch_teddy.gif" width="800px"/>
 
+A `SketchShape` can come in many forms, here are some extruded ones.
+
+<img src="docs/german_shep.gif" width="800px"/>
+
+<img src="docs/robot_hand.gif" width="800px"/>
+
 
 ### Unconstrained Latent-NeRF
 
