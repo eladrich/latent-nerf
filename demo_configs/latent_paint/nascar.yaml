@@ -1,0 +1,8 @@
+log:
+  exp_name: 'nascar'
+guide:
+  text: 'a next gen nascar'
+  shape_path: shapes/nascar.obj
+  shape_scale: 0.6
+render:
+  backbone: 'texture-mesh'
