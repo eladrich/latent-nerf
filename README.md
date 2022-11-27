@@ -66,7 +66,7 @@ To create such results, run the `train_latent_nerf` script. Parameters are handl
 
 Or alternatively
 ```bash
-python -m scripts.train_latent_nerf --log.exp_name: '2022_11_25_lego_man' --guide.text 'a lego man' --guide.shape_path shapes/teddy.obj --render.nerf_type latent
+python -m scripts.train_latent_nerf --log.exp_name '2022_11_25_lego_man' --guide.text 'a lego man' --guide.shape_path shapes/teddy.obj --render.nerf_type latent
 ```
 
 
@@ -94,7 +94,7 @@ To create such results, run the `train_latent_nerf` script. Parameters are handl
 
 Or alternatively
 ```bash
-python -m scripts.train_latent_nerf --log.exp_name: 'sand_castle' --guide.text 'a highly detailed sand castle' --render.nerf_type latent
+python -m scripts.train_latent_nerf --log.exp_name 'sand_castle' --guide.text 'a highly detailed sand castle' --render.nerf_type latent
 ```
 
 #### Textual Inversion :cat2:
