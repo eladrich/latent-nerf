@@ -21,9 +21,9 @@ class GuideConfig:
     # Guiding mesh
     shape_path: Optional[str] = None
     # Scale of mesh in 1x1x1 cube
-    mesh_scale: float = 0.6
+    mesh_scale: float = 0.7
     # Define the proximal distance allowed
-    proximal_surface: float = 0.25
+    proximal_surface: float = 0.3
 
 
 @dataclass
