@@ -162,7 +162,17 @@ Meshes for shape-guidance are available under `shapes/`
 ## Acknowledgments
 The `Latent-NeRF` code is heavily based on the [stable-dreamfusion](https://github.com/ashawkey/stable-dreamfusion) project, and the `Latent-Paint` code borrows from [text2mesh](https://github.com/threedle/text2mesh).
 
+## Citation
+If you use this code for your research, please cite our paper [Latent-NeRF for Shape-Guided Generation of 3D Shapes and Textures](https://arxiv.org/abs/2211.07600)
 
+```
+@article{metzer2022latent,
+  title={Latent-NeRF for Shape-Guided Generation of 3D Shapes and Textures},
+  author={Metzer, Gal and Richardson, Elad and Patashnik, Or and Giryes, Raja and Cohen-Or, Daniel},
+  journal={arXiv preprint arXiv:2211.07600},
+  year={2022}
+}
+```
 
 
 
