@@ -1,0 +1,7 @@
+log:
+  exp_name: 'goldfish'
+guide:
+  text: 'a goldfish'
+  shape_path: shapes/blub.obj
+render:
+  backbone: 'texture-mesh'

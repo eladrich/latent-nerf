@@ -1,0 +1,8 @@
+log:
+  exp_name: 'wooden_cabinet'
+guide:
+  text: 'a brown wooden cabinet'
+  shape_path: shapes/cabin.obj
+  shape_scale: 0.6
+render:
+  backbone: 'texture-mesh'

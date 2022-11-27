@@ -1,0 +1,10 @@
+log:
+  exp_name: 'lego_man'
+guide:
+  text: 'a lego man'
+  shape_path: shapes/teddy.obj
+optim:
+  iters: 5000
+  seed: 10
+render:
+  nerf_type: 'latent'
