@@ -9,10 +9,16 @@
 
 `potion.obj`
 
-###  Keenan Crane
+###  [Keenan's 3D Model Repository](https://www.cs.cmu.edu/~kmcrane/Projects/ModelRepository/)
 
 `blub.obj`
 
-### Gal Metzer
+###  [Princeton ModelNet](https://modelnet.cs.princeton.edu/)
 
-`teddy.obj` - Gal Metzer
+`nascar.obj`
+
+`cabin.obj`
+
+### [Gal Metzer](https://galmetzer.github.io/)
+
+`teddy.obj`
