@@ -1,4 +1,5 @@
-# Shape Credits
+# Shape Credits :cow2:
+
 
 ### Ido Richardson
 
@@ -14,10 +15,4 @@
 
 ### Gal Metzer
 
-`teddy.obj`
-
-### ModelNet
-
-`cabin.obj`
-
-`nascar.obj`
+`teddy.obj` - Gal Metzer
