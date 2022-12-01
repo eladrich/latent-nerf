@@ -21,7 +21,7 @@ class NeRFNetwork(NeRFRenderer):
 
         self.num_layers = num_layers
         self.hidden_dim = hidden_dim
-        additional_dim_size = 1 if self.latent_mode else 0
+        additional_dim_size = 1 if (self.latent_mode or cfg.nerf_type == NeRFType.latent_tune) else 0
 
         self.encoder, self.in_dim = get_encoder('tiledgrid', input_dim=3, desired_resolution=2048 * self.bound)
 
